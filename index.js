@@ -9,6 +9,6 @@ function showRepositories(event, data) {
   const repos = JSON.parse(this.responseText)
   const src = document.getElementById("repository-template").innerHTML
   const template = handlebars.compile(src)
-  const repoList = template(repose)
+  const repoList = template(repos)
   document.getElementById("repositories").innerHTML = repoList
 }
