@@ -16,6 +16,6 @@ function showRepositories(event, data) {
         <p>Issues: ${r.open_issue_count}</p>
       </li>`
       )
-  }
+  }).join('') + "</ul>"
   document.getElementById("repositories").innerHTML = repoList
 }
