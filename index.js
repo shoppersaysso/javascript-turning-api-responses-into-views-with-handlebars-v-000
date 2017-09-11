@@ -14,7 +14,7 @@ function showRepositories(event, data) {
         <p>Watchers: ${r.watchers_count}</p>
         <p>Forks: ${r.forks_count}</p>
         <p>Issues: ${r.open_issue_count}</p>
-        </li>`
+      </li>`
       )
   }
   document.getElementById("repositories").innerHTML = repoList
